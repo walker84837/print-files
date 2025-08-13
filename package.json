@@ -1,0 +1,21 @@
+{
+  "name": "print-files",
+  "version": "0.1.0",
+  "description": "A simple tool to print files with a given extension",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "cli",
+    "print",
+    "files"
+  ],
+  "author": "",
+  "license": "0BSD",
+  "dependencies": {
+    "glob": "^13.0.0",
+    "micromatch": "^4.0.8",
+    "minimist": "^1.2.8"
+  }
+}
