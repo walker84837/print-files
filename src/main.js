@@ -14,7 +14,9 @@ function readGitignore() {
 }
 
 async function main() {
-    const args = minimist(process.argv.slice(2));
+    const rawArgs = process.argv.slice(2).filter(a => a !== '--');
+    const args = minimist(rawArgs);
+
     let ext = args.ext || args.e;
     const useGitignore = !!(args.gitignore || args.g);
 
